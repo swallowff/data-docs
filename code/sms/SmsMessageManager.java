@@ -7,7 +7,9 @@ package cn.huapu.power.server.manager.sms;
  */
 public interface SmsMessageManager {
 
-    void send(String phone);
+    String send(String phone,long expiredSeconds);
+
+    boolean checkCode(String phone,String code);
 
 
 }

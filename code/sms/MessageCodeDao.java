@@ -7,8 +7,8 @@ package cn.huapu.power.server.manager.sms;
  */
 public interface MessageCodeDao {
 
-    void saveCode(String phone, String code);
+    void saveCode(String phone, String code, long expiredSeconds);
 
-    String getCodeByPhone(String phone);
+    String getAndDelCodeByPhone(String phone);
 
 }
