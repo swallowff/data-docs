@@ -11,4 +11,8 @@ public interface MessageCodeDao {
 
     String getAndDelCodeByPhone(String phone);
 
+    long sendTimesForIp(String ip);
+
+    long getLimitSecondsRemaining(String ip);
+
 }

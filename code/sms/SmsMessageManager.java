@@ -9,7 +9,7 @@ public interface SmsMessageManager {
 
     String send(String phone,long expiredSeconds);
 
-    boolean checkCode(String phone,String code);
+    boolean validateCode(String phone,String code);
 
 
 }
